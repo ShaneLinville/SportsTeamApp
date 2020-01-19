@@ -1,0 +1,164 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+nav {
+    display: inline-block;
+    font-size: 18px;
+    color: darkblue;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: solid darkblue;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+    nav a {
+        color: darkblue;
+        padding: 10px;
+        padding-top: 15px;
+        height: auto;
+        text-align: center;
+    }
+
+    nav a:hover{
+        color: gray;
+        text-decoration: none;
+    }
+.logo {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: auto;
+}
+.col-md-8 {
+    background-image: linear-gradient(cornflowerblue, lightblue);
+    height: 500px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.col-md-8 h3,p {
+    padding: 5px;
+    margin-left: 25px;
+}
+
+.col-md-8 img {
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-left: 50px;
+    width: 90%;
+    height: auto;
+}
+
+.col-md-4 {
+    background-image: linear-gradient(cornflowerblue, lightblue);
+    height: 500px;
+    color: antiquewhite;
+    border-left: solid white;
+    border-radius: 5px;
+}
+
+.col-md-4 h3, p {
+    padding: 5px;
+    margin-left: 25px;
+}
+
+
+    .col-md-4 img {
+        position: absolute;
+        border: 5px solid white;
+        border-radius: 5px;
+        margin-left: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    /*Players Index css*/
+
+.createBtn {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    width: 90px;
+}
+
+    .createBtn a {
+        color: white;
+    }
+
+    .createBtn a:hover{
+        text-decoration: none;
+    }
+
+    .table th{
+        background-color:cornflowerblue;
+        color: antiquewhite;
+        font-size: 20px;
+        font-weight: bold;
+        width: auto;
+    }
+
+    .table tr:hover {
+        background-color: lightgray;
+    }
+
+    /*Details page*/
+
+    .row col-sm-2 {
+
+    }
+
+    /*Create Player*/
+    .form {
+        background-color: cornflowerblue;
+        height: 1000px;
+        width: 50%;
+        border-radius: 5px;
+    }
+
+   form {
+      padding: 5px;
+   }
+
+       

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Team App</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+</head>
+<body>
+    <header>
+        <img class="logo" src="~/lib/images/freeLogo.jpeg" alt="Logo source Logodesign.net" />
+        @*<a href=null>Logo source Logodesign.net</a>*@
+
+
+
+    </header>
+    <div class="container">
+
+        <a asp-controller="Team" asp-action="Index">Team App</a>
+        @*<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>*@
+        <nav class="nav">
+            <a asp-area="" asp-controller="Team" asp-action="Index">Home</a>
+            <a asp-area="" asp-controller="Players" asp-action="Index">Players</a>
+            @*<a asp-area="" asp-controller="Players" asp-action="Create">Create</a>
+            <a asp-area="" asp-controller="Players" asp-action="Delete">Delete</a>
+            <a asp-area="" asp-controller="Players" asp-action="Edit">Edit</a>*@
+        </nav>
+    </div>
+
+    <div class="container">
+        @*<partial name="_CookieConsentPartial" />*@
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - Team App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
